@@ -1,0 +1,119 @@
+@import 'font-awesome/css/fontawesome-all.min.css';
+@import "utilities/cross-browser.scss";
+
+@font-face {
+	font-family: "Montserrat";
+	src: url('../../fonts/Montserrat/Montserrat-Regular.ttf');
+}
+@font-face {
+    font-family: "Montserrat";
+    font-style: italic;
+	src: url('../../fonts/Montserrat/Montserrat-Italic.ttf');
+}
+@font-face {
+    font-family: "Montserrat";
+    font-weight: bold;
+	src: url('../../fonts/Montserrat/Montserrat-SemiBold.ttf');
+}
+
+@font-face {
+    font-family: "Montserrat";
+    font-style: italic;
+	src: url('../../fonts/Montserrat/Montserrat-BoldItalic.ttf');
+}
+
+/* Reset Css */
+html, body, div, span, iframe,
+h1, h2, h3, h4, h5, h6, p, a, img,
+strong, b, u, i, ul, li, form, canvas,
+audio, video
+{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    font-family: 'Montserrat', sans-serif;
+    vertical-align: baseline;
+   
+}
+
+html {
+    font-size: 100%;
+}
+
+ol, ul
+{     
+    list-style: none;
+}
+
+table
+{
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+a
+{
+    text-decoration: none;
+    color: black;
+}
+
+html, body
+{
+    height: 100%;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+    font-family: Arial;
+    position: relative;
+}
+/* Reset Css */
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.loginWrapper {
+    border-radius: 2px;    
+    display: inline-block;
+    width:50%;
+    h1 {
+        text-align: center;
+    }
+    padding: 10px;
+}
+.logo {
+    padding: 30px;   
+    position: relative;
+    left: 50%;
+    max-width: 40%;
+    transform: translateX(-50%);
+}
+
+.loginButton {
+  @include transition(all 0.2s ease-in);
+  height: 50px;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 2px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  cursor: pointer;
+}
+
+
+.themeWrapper {
+    height: 100%;
+}
+
+.userSelectNone {
+    user-select: none;
+}

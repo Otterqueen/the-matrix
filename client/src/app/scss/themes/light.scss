@@ -1,0 +1,162 @@
+@import '../colorPallet/light.scss';
+
+.light {
+    .wrapperSearch{
+        input{
+            background-color: $zoneColor;
+            border-color: $sidebarColor;
+            color: $textSecondary;
+        }
+         .searchResults {
+            background-color: darken($textSideBar, 20%);
+            border-color: $sidebarColor;
+            .searchOption {
+                color: $sidebarColor;
+                background-color:  $textSideBar;
+                border-color: darken($textSideBar, 20%);
+                &.selected {
+                    background-color: darken($textSideBar, 20%);
+                    color: darken($sidebarColor, 20%);
+                }
+            }
+        }
+    }
+    .switch {
+        background-color: $sidebarColor;
+        .switchButton {
+            background-color: $seatColor;
+        }
+    }
+    .sidebar {
+        background-color: $sidebarColor;
+        .main-tile {
+            &:nth-child(2n+1) {
+                background-color: lighten($color: $sidebarColor, $amount: 4);
+            }
+            &:hover {
+                background-color: lighten($color: $sidebarColor, $amount: 8);
+            }
+        }
+        .btn {
+            color: $textSideBar
+        }
+        .multi-dropdown {
+            color: $textSideBar;
+            .dropdown-header {
+                border-bottom-color: $sidebarBorderColor;
+            }
+            .dropdown-content {
+                background-color: $sidebarBorderColor;
+                border-bottom-color: $sidebarBorderColor;
+                .dropdown-option {
+                    background-color: darken($color: $sidebarColor, $amount: 2);
+                    border-color: $sidebarBorderColor;
+                    &:hover {
+                        background-color: lighten($color: $sidebarColor, $amount: 2);
+                    }		
+                }
+            }
+        }
+    }
+    .loginWrapper {
+        color: $loginColor;
+        .loginButton {
+            border-color: $loginColor;
+        }
+        .loginButton:hover {
+            background-color: $loginColor;
+            color: $backColor;
+        }
+    }
+    .loader {
+        background-color: $backColor;
+        background-image: url('../../img/svg-loaders/oval-light.svg'); 
+    }
+    .wrapper {
+        color: $loginColor;
+        background-color: $backColor;
+    }
+    .zone {
+        background-color: $zoneColor;
+    }
+    .seat {
+        background-color: $seatColor;
+        &.taken {
+            background-color: $rowColor;
+        }
+    }
+    .seatRow {
+        background-color: $rowColor;
+    }
+    .hostInfoWrapper {
+        border-color: $darkShadow;
+        .adminFilter {
+            background-color: $rowColor;
+            color: $textPrimary;
+        }
+        .poolTag {
+            background-color: $rowColor;
+            color: $textPrimary;
+        }
+        .splitter {
+            .rightCol {
+                .loaderHostInfo {
+                    background-color: $main;
+                }
+                .skewed {
+                    &.main {
+                        background-color: $mainDark;
+                    }
+                    &.secondary {
+                        background-color: $main;
+                        .hostName {
+                            color: $textSecondary;
+                        }
+                    }
+                }
+                .hostContent {
+                    &.contentTop {
+                        background-color: $mainDark;
+                        .userName {
+                            color: $textSecondary;
+                        }
+                        .tags {
+                            color: $textTertiary;                   
+                            &.inactive {
+                                color: $textTertiary;
+                            }
+                        }
+                    }
+                    &.contentBottom {
+                        background-color: $main;
+                        .stats {
+                            .statName {
+                                color: $textPrimary;                              
+                            }
+                            .statValue {
+                                color: $textSecondary;
+                            }
+                        }
+                        .profileButton {
+                            .buttonContent {
+                                background-color: $mainDark;                            
+                                border-color: $darkShadow;
+                                .linkUserAccount {
+                                    color: $textTertiary;
+                                }
+                            }
+                            .buttonSkewed {
+                                background-color: $mainDark;                                
+                                border-color: $darkShadow;
+                                background-color: $mainDark;                               
+                            }
+                        }
+                    }
+                }
+            }
+            .leftCol {
+                background-color: $placeHolderColor;
+            }
+        }
+    }
+}
